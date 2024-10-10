@@ -1,0 +1,21 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int[] massiv = { 2, 3, 5, 1, 4 };
+        int result = CalculateSum(massiv);
+        Console.WriteLine("Сумма элементов массива = " + result);
+
+    }
+    public static int CalculateSum(int[] massiv)
+    {
+        int TotalSum = 0;
+        foreach (int i in massiv)
+        {
+            TotalSum += i;
+        }
+            return TotalSum;
+        
+    }
+}
